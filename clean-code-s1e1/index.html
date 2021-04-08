@@ -1,20 +1,23 @@
 <!DOCTYPE html>
   <head><title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
-          rel="stylesheet" type="text/css">
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <p><label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text"><button>Add</button>
-        </div>
-      </p>
+    </header>
+    <main class="main">
+      <section class="new-item">
+        <p><label for="new-task">Add Item</label>
+          <div class="task-row-wrapper">
+            <input id="new-task"class="task" type="text"><button>Add</button>
+          </div>
+        </p>
+      </section>
+    <section class="todo">
       <h3>Todo</h3>
       <ul id="incomplete-tasks">
         <li>
@@ -28,6 +31,8 @@
           <button class="delete"><img src="./remove.svg"></button>
         </li>
       </ul>
+    </section>
+    <section class="completed">
       <h3>Completed</h3>
       <ul id="completed-tasks">
         <li>
@@ -36,7 +41,8 @@
           <button class="delete"><img src="./remove.svg"></button>
         </li>
       </ul>
-    </div>
+    </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
